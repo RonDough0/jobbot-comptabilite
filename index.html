@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#142a35">
+  <meta name="description" content="JobBot Comptabilité : projet personnel de recherche et de préparation de candidatures en comptabilité au Québec.">
+  <title>JobBot Comptabilité — Projet personnel</title>
+  <style>
+    :root{--ink:#172b36;--muted:#61727d;--edge:#dfe7e9;--accent:#0d756e;--pale:#e8f5f1;--paper:#fff;--bg:#f6f8f8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:3px solid #3aa997;outline-offset:4px}
+    .wrap{width:min(1050px,calc(100% - 42px));margin:auto}
+    .header{background:var(--paper);border-bottom:1px solid var(--edge)}
+    .header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:18px}
+    .logo{font-weight:800;letter-spacing:-.055em;font-size:1.25rem}
+    .logo i{font-style:normal;color:var(--accent)}
+    nav{display:flex;gap:25px;font-size:.9rem;font-weight:650;color:#405762}
+    nav a:hover{color:var(--accent)}
+    .hero{padding:76px 0 82px;background:radial-gradient(ellipse at 90% 12%, #d7efea 0%,transparent 48%),linear-gradient(#fff,#f6f8f8)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:54px}
+    .eyebrow{color:var(--accent);text-transform:uppercase;font-size:.75rem;letter-spacing:.13em;font-weight:800}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(2.45rem,5vw,4.5rem);line-height:1.08;letter-spacing:-.057em;margin-bottom:22px;max-width:720px}
+    .lead{font-size:1.13rem;color:#49606a;max-width:630px;line-height:1.75}
+    .pills{display:flex;gap:9px;flex-wrap:wrap;margin:28px 0 30px}
+    .pill{border:1px solid #cadad7;border-radius:100px;padding:6px 12px;background:#fff;font-size:.82rem;font-weight:650}
+    .button{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;padding:13px 19px;border-radius:9px;font-weight:750;font-size:.91rem}
+    .button:hover{background:#33505e}
+    .side{background:var(--paper);border:1px solid var(--edge);border-radius:18px;box-shadow:0 18px 45px #1d46540d;padding:26px}
+    .small-head{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--edge);padding-bottom:16px;margin-bottom:22px}
+    .small-head strong{font-size:.98rem}
+    .dot{width:9px;height:9px;border-radius:50%;background:#39b499;box-shadow:0 0 0 5px #ddf5ee}
+    .flow{display:grid;gap:8px}
+    .flow-item{display:flex;gap:15px;align-items:center;border:1px solid var(--edge);padding:13px;border-radius:9px;font-weight:620;font-size:.9rem}
+    .step{display:grid;place-items:center;width:30px;height:30px;flex:none;background:var(--pale);color:var(--accent);border-radius:8px;font-weight:800}
+    .arrow{padding-left:20px;color:#9caeb5;font-size:1rem;line-height:1}
+    section{padding:70px 0}
+    .intro{max-width:660px;margin-bottom:32px}
+    h2{font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.19;letter-spacing:-.04em;margin-bottom:14px}
+    .intro p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{padding:24px;background:var(--paper);border:1px solid var(--edge);border-radius:14px}
+    .card .index{font-weight:800;color:var(--accent);font-size:.8rem}
+    .card h3{font-size:1.1rem;line-height:1.35;letter-spacing:-.02em;margin:12px 0}
+    .card p{color:var(--muted);font-size:.93rem;margin-bottom:0}
+    .details{border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);background:#fff}
+    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+    .detail-grid p{color:var(--muted)}
+    .note{padding:20px 22px;border-left:4px solid var(--accent);background:#eef7f4;border-radius:0 10px 10px 0;color:#284b4c}
+    .english{border-top:1px solid var(--edge);padding-top:30px;margin-top:34px}
+    footer{padding:30px 0 40px;color:var(--muted);font-size:.83rem}
+    footer .wrap{border-top:1px solid var(--edge);padding-top:22px}
+    @media(max-width:760px){.hero-grid,.detail-grid{grid-template-columns:1fr;gap:26px}.hero{padding:55px 0}.cards{grid-template-columns:1fr}section{padding:52px 0}nav{gap:12px;font-size:.8rem}.side{max-width:540px}}
+    @media(max-width:420px){.wrap{width:min(100% - 28px,1050px)}nav{gap:10px}.logo{font-size:1rem}h1{font-size:2.5rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="#accueil" aria-label="JobBot Comptabilité, accueil">JobBot<i>.</i>Comptabilité</a>
+      <nav aria-label="Navigation"><a href="#fonctionnalites">Fonctionnalités</a><a href="#apropos">À propos</a></nav>
+    </div>
+  </header>
+  <main>
+    <div id="accueil" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Projet personnel · Québec, Canada</p>
+          <h1>Des recherches d'emploi plus ciblées. Des candidatures plus simples.</h1>
+          <p class="lead">JobBot Comptabilité est un outil personnel en développement qui aide à repérer les postes d'entrée en comptabilité et à préparer des candidatures adaptées, avec validation humaine avant tout envoi.</p>
+          <div class="pills" aria-label="Domaines ciblés">
+            <span class="pill">Commis comptable</span><span class="pill">Comptes clients / fournisseurs</span><span class="pill">Stages</span><span class="pill">Fiscalité</span>
+          </div>
+          <a href="#fonctionnalites" class="button">Découvrir le projet &nbsp; ↗</a>
+        </div>
+        <div class="side" aria-label="Étapes du fonctionnement">
+          <div class="small-head"><strong>Processus de candidature</strong><span class="dot" aria-hidden="true"></span></div>
+          <div class="flow">
+            <div class="flow-item"><span class="step">1</span>Repérer des offres récentes</div><div class="arrow" aria-hidden="true">↓</div>
+            <div class="flow-item"><span class="step">2</span>Vérifier les critères</div><div class="arrow" aria-hidden="true">↓</div>
+            <div class="flow-item"><span class="step">3</span>Préparer un CV ciblé</div><div class="arrow" aria-hidden="true">↓</div>
+            <div class="flow-item"><span class="step">4</span>Relire avant de postuler</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="fonctionnalites">
+      <div class="wrap">
+        <div class="intro"><p class="eyebrow">Fonctionnalités</p><h2>Un assistant pour les premières expériences en comptabilité</h2><p>Le prototype fonctionne localement et accompagne la recherche d'emplois sans postuler automatiquement.</p></div>
+        <div class="cards">
+          <article class="card"><span class="index">01 / RECHERCHE</span><h3>Annonces récentes</h3><p>Collecte depuis des sources d'offres configurées, avec filtre sur les annonces datées des dernières 72 heures.</p></article>
+          <article class="card"><span class="index">02 / PERTINENCE</span><h3>Postes débutants</h3><p>Classement ciblant les postes de commis, AR/AP, stages et aide en fiscalité dans la région de Montréal.</p></article>
+          <article class="card"><span class="index">03 / CANDIDATURE</span><h3>Documents à vérifier</h3><p>Préparation de CV Word sobres et de courriels adaptés, à partir des compétences réellement déclarées.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="details" id="apropos">
+      <div class="wrap">
+        <div class="detail-grid">
+          <div>
+            <p class="eyebrow">À propos</p>
+            <h2>Un projet individuel, non commercial</h2>
+            <p>JobBot Comptabilité est conçu pour faciliter la recherche personnelle de postes de début de carrière en comptabilité au Québec. Le projet n'est pas une agence de recrutement et ne publie pas d'offres d'emploi sur ce site.</p>
+            <p>Il peut utiliser des interfaces de programmation accessibles conformément aux modalités des fournisseurs, notamment pour repérer des offres pertinentes.</p>
+          </div>
+          <div>
+            <p class="eyebrow">Confidentialité et limites</p>
+            <h2>L'utilisateur garde le contrôle</h2>
+            <p>Le site est une page de présentation uniquement : il ne collecte pas de données et ne contient ni CV personnel ni identifiants API. L'outil local ne soumet pas automatiquement de candidatures.</p>
+            <div class="note">État du projet : prototype personnel en développement. Les données et la disponibilité des offres dépendent des sources consultées.</div>
+          </div>
+        </div>
+        <div class="english" lang="en">
+          <p class="eyebrow">English overview</p>
+          <p><strong>JobBot Comptabilité</strong> is a non-commercial personal project designed to assist with entry-level accounting job searches in Québec, Canada. The local tool filters recent listings, ranks relevant vacancies, and prepares résumé and email drafts for human review. This public page collects no applicant information and is not affiliated with any job board.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 JobBot Comptabilité · Projet personnel indépendant · Québec, Canada</div></footer>
+</body>
+</html>
