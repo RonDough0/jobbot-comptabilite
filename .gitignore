@@ -1,0 +1,12 @@
+# Local personal documents and secrets must never be published
+.env
+.env.*
+*.docx
+*.pdf
+*.sqlite
+cv_master.json
+resultats/
+candidatures/
+.venv/
+__pycache__/
+.DS_Store
